@@ -1,0 +1,77 @@
+.item {
+    display: inline-block;
+    border: double;
+    margin: 15px 15px;
+    width: 21%;
+    background-color: aliceblue;
+    transition: width 100ms, height 100ms;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.item:hover{
+    width: 23%;
+}
+
+.item img {
+    width: 100%;
+    height: 30%;
+    display: block;
+    margin-bottom: 4%;
+}
+
+.item input {
+    border-radius: 25px;
+    background-color: lightblue;
+    display: block;
+    margin: 4% auto;
+    height: 25px;
+    width: 100%;
+    color: rebeccapurple;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.item input:focus{
+    background-color: rgb(250, 234, 230);
+    border: solid rgb(0, 255, 76);
+}
+
+.item > div, .item h3 {
+    display: inline-block;
+}
+
+.content {
+    padding-left: 4%;
+}
+
+.animation-inner img{
+    margin-top: 120px;
+    width: 100%;
+    height: 500px;
+    border: 2px solid steelblue;
+}
+
+.animation-inner{
+    animation : imageChange 30s steps(1, end)  infinite;
+    position: absolute;
+}
+
+@keyframes imageChange {
+    0%{top: 0px;}
+    20%{top: -624px;}
+    40%{top: -1248px;}
+    60%{top: -1874px;}
+    80%{top: -2502px;}
+}
+
+.animation-outer{
+    height : 500px;
+    overflow-y: hidden;
+    position: relative;
+}
+section h1{
+    margin: 15px;
+    color: cadetblue;
+}
+
