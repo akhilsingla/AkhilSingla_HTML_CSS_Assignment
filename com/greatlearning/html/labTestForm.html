@@ -52,31 +52,31 @@
     <img src="../images/labTest/lab-test.jpg">
     <div>
 
-        <form>
+        <form action="#" method="post">
             <div class="formContent">
                 <div class="contactDetails">
                     <h2>1. Your Contact Details</h2>
-                    <input placeholder="Full Name" type="text">
+                    <input placeholder="Full Name" required type="text">
                     <input placeholder="Patient Id if exists" type="text">
                     <br/>
-                    <input placeholder="Contact Number" type="text">
-                    <input placeholder="Email Id" type="text">
+                    <input pattern="/(7|8|9)\d{9}/" placeholder="Contact Number" required type="text">
+                    <input placeholder="Email Id" required type="text">
                 </div>
 
                 <div class="address">
                     <h2>2. Address</h2>
-                    <input placeholder="House Number" type="text">
-                    <input placeholder="Street" type="text">
+                    <input placeholder="House Number" required type="text">
+                    <input placeholder="Street" required type="text">
                     <br/>
-                    <input placeholder="Area" type="text">
+                    <input placeholder="Area" required type="text">
                     <br/>
                     <label for="district"><h2>District</h2></label>
-                    <select id="district">
-                        <option>------Choose------</option>
-                        <option>Delhi</option>
-                        <option>Bangalore</option>
-                        <option>Mumbai</option>
-                        <option>Hyderabad</option>
+                    <select id="district" required>
+                        <option value="">------Choose------</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Hyderabad">Hyderabad</option>
                     </select>
                 </div>
 
@@ -97,6 +97,7 @@
                     <input id="glucoseTest" type="checkbox" value="Glucose Test">
                     <label for="glucoseTest">Glucose Test</label>
                     <br/>
+                    <b>*Check at-least one box without fail</b><br/>
                 </div>
 
                 <div class="wantReport">
@@ -109,7 +110,7 @@
 
                 <div class="collectionDateTime">
                     <h2>5. Select Your Comfortable Date and Time</h2>
-                    <input id="daytime" type="datetime-local"/>
+                    <input id="daytime" required type="datetime-local"/>
                 </div>
             </div>
 
