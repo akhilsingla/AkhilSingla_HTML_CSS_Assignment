@@ -11,10 +11,10 @@ header h1 {
 
 }
 
-body div.header{
+body div.header {
     position: fixed;
     width: 100%;
-    top:0%;
+    top: 0%;
     z-index: 1;
 }
 
