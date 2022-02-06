@@ -70,8 +70,8 @@
     overflow-y: hidden;
     position: relative;
 }
-section h1{
+section h2{
     margin: 15px;
     color: cadetblue;
+    font-size: 1.7em;
 }
-

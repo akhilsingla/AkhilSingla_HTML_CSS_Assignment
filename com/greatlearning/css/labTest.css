@@ -1,0 +1,70 @@
+.content img{
+    position: fixed;
+    right: 0;
+    z-index: -1;
+}
+
+.content{
+    margin-top: 120px;
+    overflow: hidden;
+}
+
+.formContent{
+    display: inline-block;
+    position: absolute;
+    overflow-y: scroll;
+    margin-left:2.5%;
+    height: 900px;
+}
+
+#formReset{
+    border-radius: 25px;
+    margin-top: 950px;
+    width: 100px;
+}
+
+#formSubmit{
+    border-radius: 25px;
+    margin-top: 950px;
+    margin-left: 20%;
+    width: 100px;
+}
+
+.contactDetails  input, .address input{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: blue;
+    width: 500px;
+    overflow: scroll;
+    margin-right: 15px;
+    margin-bottom: 50px;
+}
+
+.address select{
+    border-radius: 25px;
+    width: 250px;
+    height: 25px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.address select > option{
+    text-align: center;
+}
+
+.testType input{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.wantReport label{
+    margin-right: 30px;
+}
+
+.collectionDateTime input{
+    border-radius: 25px;
+}
+
+h2{
+    font-size: 1.7em;
+}

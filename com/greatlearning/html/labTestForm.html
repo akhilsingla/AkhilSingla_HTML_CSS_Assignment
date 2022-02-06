@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/labTest.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!------- Header section-------->
+<div class="header">
+    <header>
+        <h1>Pharmacy</h1>
+    </header>
+
+    <nav id="navigate">
+        <ul class="menu">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+
+            <li>
+                <a href="#">Our Medicines</a>
+                <ul id="dd1">
+                    <li><a href="#">Fever</a></li>
+                    <li><a href="#">Muscle Pains</a></li>
+                    <li><a href="#">Cold and Cough</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Health Care</a>
+                <ul id="dd2">
+                    <li><a href="#">Baby Care</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="#">Home Care</a></li>
+                    <li><a href="#">Personal Care</a></li>
+                    <li><a href="#">Pet Care</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Lab Test</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!------- Main Content-------->
+
+<div class="content">
+    <img src="../images/labTest/lab-test.jpg">
+    <div>
+
+       <form>
+            <div class="formContent">
+           <div class="contactDetails">
+           <h2>1. Your Contact Details</h2>
+           <input type="text" placeholder="Full Name">
+           <input type="text" placeholder="Patient Id if exists">
+           <br/>
+           <input type="text" placeholder="Contact Number">
+           <input type="text" placeholder="Email Id">
+           </div>
+
+           <div class="address">
+           <h2>2. Address</h2>
+           <input type="text" placeholder="House Number">
+           <input type="text" placeholder="Street">
+           <br/>
+           <input type="text" placeholder="Area">
+           <br/>
+           <label for="district"><h2>District</h2></label>
+           <select id="district">
+               <option>------Choose------</option>
+               <option>Delhi</option>
+               <option>Bangalore</option>
+               <option>Mumbai</option>
+               <option>Hyderabad</option>
+           </select>
+           </div>
+
+           <div class="testType">
+           <h2>3. Test Type</h2>
+           <input type="checkbox" id="cbc" value="CBC">
+           <label for="cbc">CBC</label>
+           <br/>
+           <input type="checkbox" id="completeUrine" value="Complete Urine">
+           <label for="completeUrine">Complete Urine</label>
+           <br/>
+           <input type="checkbox" id="lipidProfile" value="Lipid Profile">
+           <label for="lipidProfile">Lipid Profile</label>
+           <br/>
+           <input type="checkbox" id="tsh" value="Thyroid Stimulating Hormone(TSH)">
+           <label for="tsh">Thyroid Stimulating Hormone(TSH)</label>
+           <br/>
+           <input type="checkbox" id="glucoseTest" value="Glucose Test">
+           <label for="glucoseTest">Glucose Test</label>
+           <br/>
+           </div>
+
+           <div class="wantReport">
+           <h2>4. Do you want a hard copy of the report also?</h2>
+           <input type="radio" id="yes" value="Yes">
+           <label for="yes">Yes</label>
+           <input type="radio" id="no" value="No">
+           <label for="no">No</label>
+           </div>
+
+           <div class="collectionDateTime">
+           <h2>5. Select Your Comfortable Date and Time</h2>
+           <input type="datetime-local" id="daytime"/>
+           </div>
+            </div>
+
+           <input type="button" value="Reset" id="formSubmit">
+           <input type="submit" value="Submit" id="formReset">
+       </form>
+    </div>
+
+</div>
+
+<!------- Footer section-------->
+<div>
+<!--    <footer class="labForm">
+        @copyright. Only for demonstration purpose
+    </footer>-->
+</div>
+
+</body>
+</html>

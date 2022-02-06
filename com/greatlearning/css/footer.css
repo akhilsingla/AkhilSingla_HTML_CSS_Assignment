@@ -5,3 +5,12 @@ footer {
     text-align: center;
 
 }
+
+.labForm {
+    position: absolute;
+    background-color: red;
+    margin-top: 900px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
